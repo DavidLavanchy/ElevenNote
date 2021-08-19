@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ElevenNote.Models
 {
-    class CategoryListItem
+    public class CategoryListItem
     {
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
     }
 }

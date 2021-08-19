@@ -26,7 +26,7 @@ namespace ElevenNote.Services
                     Title = model.Title,
                     Content = model.Content,
                     CreatedUtc = DateTimeOffset.Now,
-
+                    CategoryId = model.CategoryId
                 };
             using(var ctx = new ApplicationDbContext())
             {
@@ -50,6 +50,7 @@ namespace ElevenNote.Services
                             NoteId = e.NoteId,
                             Title = e.Title,
                             CreatedUtc = e.CreatedUtc
+                            
                         }
                         );
                 return query.ToArray();
