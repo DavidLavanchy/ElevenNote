@@ -26,7 +26,6 @@ namespace ElevenNote.Services
                     Title = model.Title,
                     Content = model.Content,
                     CreatedUtc = DateTimeOffset.Now,
-                    CategoryId = model.CategoryId
                 };
             using(var ctx = new ApplicationDbContext())
             {
@@ -73,7 +72,6 @@ namespace ElevenNote.Services
                         Content = entity.Content,
                         CreatedUtc = entity.CreatedUtc,
                         ModifiedUtc = entity.ModifiedUtc,
-                        CategoryId = entity.CategoryId
                     };
             }
         }
@@ -90,7 +88,6 @@ namespace ElevenNote.Services
                 entity.Title = model.Title;
                 entity.Content = model.Content;
                 entity.ModifiedUtc = DateTimeOffset.Now;
-                entity.CategoryId = model.CategoryId;
 
                 return ctx.SaveChanges() == 1;
             }
@@ -103,7 +100,7 @@ namespace ElevenNote.Services
                 var entity =
                     ctx
                     .Notes
-                    .Single(e => e.NoteId == noteId && e.OwnerId == _userId);
+                    .Single(e => e.NoteId == noteId);
 
                 ctx.Notes.Remove(entity);
 

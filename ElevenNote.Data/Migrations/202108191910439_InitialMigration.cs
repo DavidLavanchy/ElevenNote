@@ -16,7 +16,7 @@ namespace ElevenNote.Data.Migrations
                     })
                 .PrimaryKey(t => t.CategoryId);
             
-            AddColumn("dbo.Note", "CategoryId", c => c.Int(nullable: true));
+            AddColumn("dbo.Note", "CategoryId", c => c.Int(default));
             CreateIndex("dbo.Note", "CategoryId");
             AddForeignKey("dbo.Note", "CategoryId", "dbo.Category", "CategoryId", cascadeDelete: true);
         }
