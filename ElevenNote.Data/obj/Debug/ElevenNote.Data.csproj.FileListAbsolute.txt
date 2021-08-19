@@ -33,3 +33,6 @@ C:\ElevenFiftyProjects\ElevenNote\ElevenNote\ElevenNote.Data\bin\Debug\System.We
 C:\ElevenFiftyProjects\ElevenNote\ElevenNote\ElevenNote.Data\bin\Debug\System.Net.Http.Formatting.xml
 C:\ElevenFiftyProjects\ElevenNote\ElevenNote\ElevenNote.Data\bin\Debug\System.Web.Http.xml
 C:\ElevenFiftyProjects\ElevenNote\ElevenNote\ElevenNote.Data\bin\Debug\System.Web.Http.Owin.xml
+C:\ElevenFiftyProjects\ElevenNote\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.Migrations.InitialCreate.resources
+C:\ElevenFiftyProjects\ElevenNote\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.csproj.GenerateResource.cache
+C:\ElevenFiftyProjects\ElevenNote\ElevenNote\ElevenNote.Data\obj\Debug\ElevenNote.Data.Migrations.InitialMigration.resources

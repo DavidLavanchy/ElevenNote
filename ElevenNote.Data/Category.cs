@@ -10,6 +10,7 @@ namespace ElevenNote.Data
     public class Category
     {
         [Key]
+        [Required]
         public int CategoryId { get; set; }
         [Required]
         [Display(Name ="Category Name")]
