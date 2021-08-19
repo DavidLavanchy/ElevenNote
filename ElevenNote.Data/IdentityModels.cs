@@ -3,11 +3,12 @@ using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using ElevenNote.Data;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 
-namespace IdentityModels.cs
+namespace ElevenNote.Data
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -53,7 +54,7 @@ namespace IdentityModels.cs
     {
         public IdentityUserLoginConfiguration()
         {
-            HasKey(IdentityUserLogin => IdentityUserLogin.UserId);
+            HasKey(iul => iul.UserId);
         }
     }
 
@@ -61,7 +62,7 @@ namespace IdentityModels.cs
     {
         public IdentityUserRoleConfiguration()
         {
-            HasKey(IdentityUserRole => IdentityUserRole.UserId);
+            HasKey(iur => iur.UserId);
         }
     }
 
